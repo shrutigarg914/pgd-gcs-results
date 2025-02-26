@@ -46,7 +46,7 @@
             <div class="inner">
               <h1>Planning Shorter Paths in Graphs of Convex Sets by Undistorting Parametrized Configuration Spaces</h1>
 
-              <h2><a href="https://www.linkedin.com/in/sgrg914/">Shruti Garg</a>, <a href="http://tommycohn.com/">Thomas Cohn</a>, <a href="https://locomotion.csail.mit.edu/russt.html">Russ Tedrake</a></h2>
+              <h2><a href="https://shrutigarg914.github.io/">Shruti Garg</a>, <a href="http://tommycohn.com/">Thomas Cohn</a>, <a href="https://locomotion.csail.mit.edu/russt.html">Russ Tedrake</a></h2>
 
               <p class="project-page-cont">Optimization based motion planning provides a useful modeling framework through various costs and constraints. Using Graph of Convex Sets (GCS) for trajectory optimization gives guarantees of feasibility and optimality by representing configuration space as the finite union of convex sets. Nonlinear parametrizations can be used to extend this technique to handle cases such as kinematic loops, but this distorts distances, such that solving with convex objectives will yield paths that are suboptimal in the original space. We present a method to extend GCS to nonconvex objectives, allowing us to "undistort" the optimization landscape while maintaining feasibility guarantees. We demonstrate our method's efficacy on three different robotic planning domains: a bimanual robot moving an object with both arms, the set of 3D rotations using Euler angles, and a rational parametrization of kinematics that enables certifying regions as collision free. Across the board, our method significantly improves path length and trajectory duration with only a minimal increase in runtime.</p>
 
@@ -149,6 +149,19 @@
                 <a href="ciris_7dof/og2.html"><img src="images/ciris_7dof/og2.gif" alt="" style="width: 100%;"></a>
                 <a href="ciris_7dof/og2.html"><p class="image-caption">Random Start-Goal Pair (Baseline)</p></a>
               </div>
+	      <br><br>
+	      <h4>Meshcat Recording of 7DoF iiwa Moving through Clutter</h4>
+	      <p>Click each image below to open an interactive meshcat recording of the trajectory. On the left are results using our method (end effector path marked in blue), and on the right is the original result before applying our postprocessing strategy (end effector path marked in red).</p>
+	      <div style="width: 50%" class=project-media-cont>
+                <a href="ciris_7dof/clutter_pgd.html"><img src="images/ciris_7dof/clutter_pgd.gif" alt="" style="width: 100%;"></a>
+                <a href="ciris_7dof/clutter_pgd.html"><p class="image-caption">Middle to Top Shelf (PGD)</p></a>
+              </div>
+              <div style="width: 50%" class=project-media-cont>
+                <a href="ciris_7dof/clutter_og.html"><img src="images/ciris_7dof/clutter_og.gif" alt="" style="width: 100%;"></a>
+                <a href="ciris_7dof/clutter_og.html"><p class="image-caption">Middle to Top shelf (Baseline)</p></a>
+              </div>
+              <br>
+
             </div>
           </div>
 
